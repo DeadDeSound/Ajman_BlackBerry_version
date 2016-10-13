@@ -1,0 +1,92 @@
+<ion-view view-title="إلغاء الرخصة" dir="rtl">
+    <ion-content class="content" onscroll="false">
+        <div class="Wrapper animated03 fadeInRightBig">
+            <div class="Page-Inner-Padding-Top"></div>
+            <h2 class="Inner">إلغاء فروع المؤسسات</h2>
+            <h3>وصف الخدمة  :</h3>
+            <p>
+                هو اجراء قانوني وادراري يقوم به أصحاب الترخيص  (المؤسسة  او من في حكمهم ) بقصد الغاء الترخيص الخاص بالمؤسسة نهائيا.
+            </p>
+            <h3>وقت تقديم الخدمة  :</h3>
+            <p>
+                خلال أوقات الدوام الرسمي لمراكز الخدمة
+            </p>
+            <h3>المستفيد من الخدمة :</h3>
+            <p>
+                موظف / متعامل أفراد / متعامل شركات/ مؤسسات
+            </p>
+
+
+
+            <div ng-model="expandme">
+                <div ng-click="expandme=!expandme">
+                    <h3 class="CollapsTitle animated fadeInRightBig"><i class="ion-ios-arrow-down"></i>  المستندات المطلوبة للحصول على الخدمة :</h3>
+                </div>
+            </div>
+            <div ng-show="expandme" class="fadeInRightBig">
+                <ul class="Listdisc">
+                    <li>
+                        الترخيص الاصلي او نسخة منه.
+                    </li>
+                    <li>
+                        عدم ممانعة من وزارة العمل.
+                    </li>
+                    <li>
+                        الغاء الاقامة او احضار ما يثبت بان الاقامة ليست على الترخيص الملغي.
+                    </li>
+                    <li>قرار شطب الفرع من مجلس الإدارة.</li>
+
+                </ul>
+            </div>
+
+
+            <div ng-model="expandme4">
+                <div ng-click="expandme4=!expandme4">
+                    <h3 class="CollapsTitle animated fadeInRightBig"><i class="ion-ios-arrow-down"></i> خطوات تقديم الخدمة:</h3>
+                </div>
+            </div>
+            <div ng-show="expandme4" class="fadeInRightBig">
+                <ul class="Listdecimal">
+                    <li>
+                        تعبئة نموذج طلب الالغاء
+                    </li>
+                    <li>
+                        توفير المستندات المطلوبة
+                    </li>
+                    <li>
+                        دفع الغرامات ان وجدت
+                    </li>
+                    <li>
+                        توفير عدم ممانعة من وزارة العمل
+                    </li>
+                    <li>
+                        الغاء الاقامة او احضار ما يثبت بان الاقامة ليست على الترخيص الملغي
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+
+
+            <div ng-model="expandme5">
+                <div ng-click="expandme5=!expandme5">
+                    <h3 class="CollapsTitle animated fadeInRightBig"><i class="ion-ios-arrow-down"></i> الموافقات والاعتمادات المطلوبة من جهات خارجية</h3>
+                </div>
+            </div>
+            <div ng-show="expandme5" class="fadeInRightBig">
+                <ul class="Listdisc">
+                    <li>رسالة تصفية الشركة معتمدة من المحكمة.</li>
+                </ul>
+
+            </div>
+
+            <h4>النماذج المتعلقة بطلب الخدمة</h4>
+            <p>طلب الغاء ترخيص    EA-5-1-F4</p>
+            <h4>القسم المعني بتقديم الخدمة</h4>
+            <p>قسم التراخيص الاقتصادية</p>
+
+        </div>
+        </ion-content>
+    </ion-view>

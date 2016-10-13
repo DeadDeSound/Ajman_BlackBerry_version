@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <ion-view view-title="طلب اصدار رخصة جديدة" dir="rtl">
+        <ion-content class="content">
+            <div class="Wrapper animated03 fadeInRightBig">
+                <div class="Page-Inner-Padding-Top"></div>
+                <h3>موقع تقديم الخدمة :</h3>
+                <p>
+                    مراكز خدمة عملاء دائرة التنمية الاقتصادية عجمان
+                </p>
+                <h3>وقت تقديم الخدمة :</h3>
+                <p>
+                    خلال ساعات الدوام الرسمية
+                </p>
+                <h3>المستفيد من الخدمة :</h3>
+                <p>
+                    متعامل أفراد / متعامل شركات / مؤسسات
+                </p>
+
+
+
+                <div ng-model="expandme">
+                    <div ng-click="expandme=!expandme">
+                        <h3 class="CollapsTitle animated fadeInRightBig"><i class="ion-ios-arrow-down"></i>  المستندات المطلوبة للحصول على الخدمة :</h3>
+                    </div>
+                </div>
+                <div ng-show="expandme" class="animated01010 fadeInRightBig">
+                    <ul class="Listdecimal">
+                        <li>تعبئة طلب الترخيص على النموذج المخصص لذلك</li>
+                        <li>صورة عن رخصة المركز الرئيسي سارية المفعول + صورة من عقد التأسيس وملحقاته</li>
+                        <li>عقد ايجار مستودع ان وجد</li>
+                        <li>مخطط لموقع المحل + عقد إيجار أو سند الملكية (يرجى التأكد من مدى ملائمة الموقع لممارسة النشاط بواسطة قسم التفتيش قبل الاستئجار)</li>
+                        <li>موافقة الجهات الحكومية الاخرى حسب النشاط</li>
+                    </ul>
+                </div>
+
+                <div ng-model="expandme1">
+                    <div ng-click="expandme1=!expandme1">
+                        <h3 class="CollapsTitle animated fadeInRightBig"><i class="ion-ios-arrow-down"></i>  خطوات تقديم الخدمة المطلوبة من المتعامل :</h3>
+                    </div>
+                </div>
+                <div ng-show="expandme1" class="animated01010 fadeInRightBig">
+                    <ul class="Listdecimal">
+                        <li>تقديم الطلب ومرفقاته للاعتماد</li>
+                        <li>معاينة الموقع بواسطة قسم التفتيش</li>
+                        <li>إدراج الطلب في الحاسب الآلي مع عمل رسالة للغرفة التجارية</li>
+                        <li>استيفاء المراجع اجراءات غرفة التجارة ومرجاعة الدفاع المدني</li>
+                        <li>اعتماد عقد وكيل خدمات / شركة الاعمال (كون الرخصة صادرة من امارة عجمان)</li>
+                        <li>تسليم الطلب بكافة المستندات لوحدة الاستلام</li>
+                        <li>تسليم الرخصة ومرفقاته ( شهادة + بطاقة تفتيش )</li>
+
+                    </ul>
+                    
+                </div>
+
+            </div>
+        </ion-content>
+    </ion-view>
+</body>
+</html>

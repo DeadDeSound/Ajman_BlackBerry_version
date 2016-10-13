@@ -1,0 +1,70 @@
+<ion-view view-title="Cancel License">
+    <ion-content class="content">
+        <div class="Wrapper animated03 fadeInRightBig">
+            <div class="Page-Inner-Padding-Top"></div>
+            <h2 class="Inner">Cancel licensing for companies</h2>
+            <h3>Service Description</h3>
+            <p>
+                it is a legal and administrative action to be done by the owner / license holders (establishment or the like) with intent to cancel the facility license (the activity) finally .
+            </p>
+            <h3>Time of service</h3>
+            <p>
+                During the official working hours of service centers 
+            </p>
+            <h3>The beneficiary of the service</h3>
+            <p>
+                employee / dealer individual / dealer companies / establishments
+            </p>
+
+
+            <div ng-model="expandme">
+                <div ng-click="expandme=!expandme">
+                    <h3 class="CollapsTitle animated fadeInRightBig"><i class="ion-ios-arrow-down"></i> Documents required for the service</h3>
+                </div>
+            </div>
+            <div ng-show="expandme" class="fadeInRightBig">
+                <ul class="Listdisc">
+                    <li>Filling the application form</li>
+                    <li>The original license or copy of it in the case of loss</li>
+                    <li>Documentary papers for the owners of the license</li>
+
+                </ul>
+            </div>
+
+
+
+            <div ng-model="expandme4">
+                <div ng-click="expandme4=!expandme4">
+                    <h3 class="CollapsTitle animated fadeInRightBig"><i class="ion-ios-arrow-down"></i> Steps of service</h3>
+                </div>
+            </div>
+            <div ng-show="expandme4" class="fadeInRightBig">
+                <ul class="Listdecimal">
+                    <li>
+                        Review the notary public
+                    </li>
+                    <li>
+                        Review the inspection review department
+                    </li>
+                    <li>
+                        Collection of fees
+                    </li>
+                    <li>
+                        Review other government departments (Chamber of Commerce + labor office  + passport department )
+                    </li>
+                    <li>Review the notary public for publication and after obtaining the final reply of the notary public the certificate cancelling shall be issued to the customer</li>
+
+                </ul>
+
+            </div>
+
+            <h4>Forms for requesting the service</h4>
+            <p>form : Cancel EA-5-1-F4  </p>
+            <h4>The concerned department to provide the service</h4>
+            <p>cancellation and waiver section  </p>
+
+
+
+        </div>
+        </ion-content>
+    </ion-view>

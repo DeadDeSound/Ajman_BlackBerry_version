@@ -1,0 +1,30 @@
+﻿<head>
+    <meta charset="utf-8">
+</head>
+<ion-view dir="rtl" view-title="آخر الأخبار">
+    <ion-content class="content">
+        <div class="Wrapper">
+            <div class="Page-Inner-Padding-Top"></div>
+            <ion-list>
+
+                <ion-item ng-repeat="Article in model.NewsArticles" class="No-Item" ui-sref="MediaCenterDetails({ id: {{Article.NewsID}} })">
+                    <div class="TAC animated03 fadeInRightBig">
+                        <img src="http://ded.sdg.ae/Ufiles/News/{{Article.NewsImage}}"/>
+                    </div>
+                    <h1 class="animated04 fadeInRightBig">{{Article.NewsDate}}</h1>
+
+                    <h2 class="Inner animated05 fadeInRightBig">{{Article.NewsTitle}}</h2>
+
+                    <p class="animated06 fadeInRightBig MaxLine3">{{Article.NewsDetails}}</p>
+
+                    <hr/>
+
+
+                </ion-item>
+            </ion-list>
+
+        </div>
+
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,93 @@
+﻿<style>
+
+    .SideCollapsMenu .tab-title {
+        font-family: Helvetica;
+        font-size: 1.4em;
+        color: #FFF;
+    }
+
+    .MainMenu li a {
+        display: block;
+        padding: .8em 1.4em .8em 0;
+        margin: 0;
+        color: #333;
+        font-size: 1.0em;
+        font-family: Helvetica;
+    }
+</style>
+<ion-view class="SideCollapsMenu SideCollapsMenu-En">
+    <ion-tabs class="tabs-light tabs-icon-top tabs-top">
+        <ion-content>
+            <ion-tab title="About Us" icon-on="ion-document-text" icon-off="ion-document">
+                <ion-pane>
+                    <ion-content class="has-tabs-top has-header padding">
+                        <div class="MainMenu animated01010 fadeInRightBig">
+                            <ul>
+                                <li ng-click="closeMenu()"><a ui-sref="home">Home</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="ChairmanWord">Chairman's Message</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="knowUs">Our Profile</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="departmentObjectives">Objectives</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="contact"> Get in Touch</a></li>
+                            </ul>
+                        </div>
+                    </ion-content>
+                </ion-pane>
+            </ion-tab>
+            <ion-tab title="Services" icon-on="ion-gear-b" icon-off="ion-gear-a">
+                <ion-pane>
+                    <ion-content class="has-tabs-top has-header padding">
+                        <div class="MainMenu animated01010 fadeInRightBig">
+                            <ul>
+                                <li ng-click="closeMenu()"><a ui-sref="OnlineServices">Online Services</a></li>
+
+                                <li ng-click="closeMenu()"><a ui-sref="MediaServices">Consulting Service</a></li>
+
+                                <li ng-click="closeMenu()"><a ui-sref="servicesGuide">Services Guide</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="manual">Consumer Manual</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="CompAndSugg">Suggestions And Complaints</a></li>
+                                <!--<li ng-click="closeMenu()"><a ui-sref="irregularitiesList">Irregularities List</a></li>-->
+                            </ul>
+                        </div>
+
+                    </ion-content>
+                    <ion-pane>
+            </ion-tab>
+            <ion-tab title="Other" icon-on="ion-ios-plus" icon-off="ion-ios-plus-outline">
+                <ion-pane>
+                    <ion-content class="has-tabs-top has-header padding">
+                        <div class="MainMenu animated01010 fadeInRightBig">
+                            <ul>
+                                <li ng-click="closeMenu()"><a ui-sref="mediaCenter">Latest News</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="investment">Invest in Ajman</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="regulations">Laws & Regulations</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="annual_report">Annual Report</a></li>
+                                <li ng-click="closeMenu()"><a ui-sref="activitiesGuide">Business Guide</a></li>
+                                <li ng-click="changeLang()"><a>اللغة العربية</a></li>
+                                <!--<li ng-click="closeMenu()"><h2 ui-sref="statistics">Statistics</h2></li>
+
+                    <li ng-click="closeMenu()"><h2 ui-sref="legislation">Regulations</h2></li>-->
+                            </ul>
+                        </div>
+
+                        <!--<div ng-controller="sideMenuCtrl">-->
+                        <!--<div class="row" ng-repeat="icon in icons" ng-if="$index % 4 === 0">-->
+                        <!--<div class="col col-25" ng-if="$index < icons.length" ng-click="icons[$index].onClick()">-->
+                        <!--<img ng-src="{{icons[$index].icon}}" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="col col-25" ng-if="$index + 1 < icons.length" ng-click="icons[$index + 1].onClick()">-->
+                        <!--<img ng-src="{{icons[$index + 1].icon}}" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="col col-25" ng-if="$index + 2 < icons.length" ng-click="icons[$index + 2].onClick()">-->
+                        <!--<img ng-src="{{icons[$index + 2].icon}}" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="col col-25" ng-if="$index + 3 < icons.length" ng-click="icons[$index + 3].onClick()">-->
+                        <!--<img ng-src="{{icons[$index + 3].icon}}" width="100%"/>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    </ion-content>
+                </ion-pane>
+            </ion-tab>
+        </ion-content>
+    </ion-tabs>
+</ion-view>
